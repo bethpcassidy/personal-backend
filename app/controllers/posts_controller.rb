@@ -4,24 +4,31 @@ class PostsController < ApplicationController
   # GET /posts
   def index
     @posts = Post.all
-
-    render json: @posts
+    render :index
+    # render json: @posts
   end
 
   # GET /posts/1
   def show
-    render json: @post
+    # render json: @post
+    @post = Post.find_by(id: params[:id])
+    render :show
   end
 
   # POST /posts
   def create
-    @post = Post.new(post_params)
-
-    if @post.save
-      render json: @post, status: :created, location: @post
-    else
-      render json: @post.errors, status: :unprocessable_entity
-    end
+    @post = Post.new(
+      title: post[:title],
+      subline: params[:subline],
+      body: params[:body],
+    )
+    @post.save
+    render :show
+    # if @post.save
+    #   render json: @post, status: :created, location: @post
+    # else
+    #   render json: @post.errors, status: :unprocessable_entity
+    # end
   end
 
   # PATCH/PUT /posts/1
@@ -39,13 +46,14 @@ class PostsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_post
-      @post = Post.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def post_params
-      params.require(:post).permit(:title, :subline, :body)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_post
+    @post = Post.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def post_params
+    params.require(:post).permit(:title, :subline, :body)
+  end
 end
