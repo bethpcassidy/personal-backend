@@ -9,3 +9,5 @@
 # Post.create(title: "First Post", subline: "a first post", body: "this is my first post in my website")
 
 # Post.create(title: "Second Post", subline: "a second post", body: "this is my second post in my website")
+
+# Link.create(title: "github", link: "https://github.com/bethpcassidy")
