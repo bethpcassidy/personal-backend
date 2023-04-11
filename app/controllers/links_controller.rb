@@ -19,7 +19,8 @@ class LinksController < ApplicationController
   def create
     @link = Link.new(
       title: params[:title],
-      subline: params[:link],
+      link: params[:link],
+      postid: params[:postid],
     )
     @link.save
     render :show
@@ -53,6 +54,6 @@ class LinksController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def link_params
-    params.require(:link).permit(:title, :link)
+    params.require(:link).permit(:title, :link, :postid)
   end
 end
