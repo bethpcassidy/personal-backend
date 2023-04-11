@@ -1,4 +1,4 @@
-# personal-backend
+# Personal-Blog-Backend
 
 This is the backend to a WIP template for a personal website blog!
 Built in Rails with a frontend based in React.
