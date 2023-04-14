@@ -11,7 +11,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   def show
     # render json: @post
-    @post = Post.find_by(id: params[:id])
+    @post = (Post.find_by(id: params[:id]))
     render :show
   end
 
