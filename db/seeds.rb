@@ -11,3 +11,9 @@
 # Post.create(title: "Second Post", subline: "a second post", body: "this is my second post in my website")
 
 # Link.create(title: "github", link: "https://github.com/bethpcassidy")
+
+# Link.create(title: "image1", link: "https://i.ytimg.com/vi/0xqkksHov58/maxresdefault.jpg", post_id: 1)
+
+# Link.create(title: "image2", link: "https://i.ytimg.com/vi/l3hoa-stJs4/maxresdefault.jpg", post_id: 1)
+
+# Link.create(title: "image2", link: "https://patch.com/img/cdn20/users/2654110/20200217/015208/styles/patch_image/public/why-are-cats-so-weird-behaviors-finally-explained___17135128557.jpg", post_id: 1)
