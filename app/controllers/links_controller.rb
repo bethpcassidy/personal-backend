@@ -20,7 +20,7 @@ class LinksController < ApplicationController
     @link = Link.new(
       title: params[:title],
       link: params[:link],
-      postid: params[:postid],
+      postid: params[:post_id],
     )
     @link.save
     render :show

@@ -1,7 +1,7 @@
 json.id link.id
 json.title link.title
 json.link link.link
-json.postid link.postid
+json.postid link.post_id
 json.created_at link.created_at
 json.updated_at json.updated_at
 
