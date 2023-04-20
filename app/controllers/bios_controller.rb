@@ -5,11 +5,14 @@ class BiosController < ApplicationController
   # GET /bios.json
   def index
     @bios = Bio.all
+    render :index
   end
 
   # GET /bios/1
   # GET /bios/1.json
   def show
+    @bio = Bio.find_by(id: params[:id])
+    render :show
   end
 
   # POST /bios
@@ -41,13 +44,14 @@ class BiosController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_bio
-      @bio = Bio.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def bio_params
-      params.require(:bio).permit(:name, :bodytext, :github)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_bio
+    @bio = Bio.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def bio_params
+    params.require(:bio).permit(:name, :bodytext, :github)
+  end
 end
