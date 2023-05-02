@@ -18,10 +18,12 @@
 
 # Link.create(title: "image2", link: "https://patch.com/img/cdn20/users/2654110/20200217/015208/styles/patch_image/public/why-are-cats-so-weird-behaviors-finally-explained___17135128557.jpg", post_id: 1)
 
-Link.create(title: "github", link: "https://github.com/bethpcassidy", post_id: 2)
+# Link.create(title: "github", link: "https://github.com/bethpcassidy", post_id: 2)
 
-Link.create(title: "image1", link: "https://i.ytimg.com/vi/0xqkksHov58/maxresdefault.jpg", post_id: 2)
+# Link.create(title: "image1", link: "https://i.ytimg.com/vi/0xqkksHov58/maxresdefault.jpg", post_id: 2)
 
-Link.create(title: "image2", link: "https://i.ytimg.com/vi/l3hoa-stJs4/maxresdefault.jpg", post_id: 2)
+# Link.create(title: "image2", link: "https://i.ytimg.com/vi/l3hoa-stJs4/maxresdefault.jpg", post_id: 2)
 
-Link.create(title: "image2", link: "https://patch.com/img/cdn20/users/2654110/20200217/015208/styles/patch_image/public/why-are-cats-so-weird-behaviors-finally-explained___17135128557.jpg", post_id: 2)
+# Link.create(title: "image2", link: "https://patch.com/img/cdn20/users/2654110/20200217/015208/styles/patch_image/public/why-are-cats-so-weird-behaviors-finally-explained___17135128557.jpg", post_id: 2)
+
+# Bio.create(name: "Beth Cassidy", bodytext: "Full Stack Software Engineer | JavaScript | React | Ruby Ruby on Rails | HTML | CSS | C# |", github: "https://github.com/bethpcassidy")
