@@ -27,3 +27,13 @@
 # Link.create(title: "image2", link: "https://patch.com/img/cdn20/users/2654110/20200217/015208/styles/patch_image/public/why-are-cats-so-weird-behaviors-finally-explained___17135128557.jpg", post_id: 2)
 
 # Bio.create(name: "Beth Cassidy", bodytext: "Full Stack Software Engineer | JavaScript | React | Ruby Ruby on Rails | HTML | CSS | C# |", github: "https://github.com/bethpcassidy")
+
+# Post.create(title: "Personal Blog Template", subline: "SPA Blog, OOP, and Styling", body: "This is an OOP based blog that is styalized to show off different aspects of someone's portfolio. Features components from Bootstrap, CoreUI, cahilfoley's React-Snowfall, React Router, all organized in a stardard one page web application. Unlike EZWeather, the backened is used to create new database objects like posts with associated links to images and github pages, along with bio information.")
+
+# Link.create(title: "3-github", link: "https://github.com/bethpcassidy/personal-frontend", post_id: 3)
+
+# Link.create(title: "3-1", link: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png", post_id: 3)
+
+# Link.create(title: "3-2", link: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png", post_id: 3)
+
+# Link.create(title: "3-3", link: "https://cdn-icons-png.flaticon.com/512/919/919826.png/800px-JavaScript-logo.png", post_id: 3)
